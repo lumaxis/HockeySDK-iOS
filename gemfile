@@ -1,1 +1,4 @@
-gem 'danger', :git => "git://github.com/danger/danger.git", :branch => "master"
+source 'https://rubygems.org'
+
+gem 'pry-byebug'
+gem 'danger', :path => '~/Work/danger'
