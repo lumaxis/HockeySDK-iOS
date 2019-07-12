@@ -30,7 +30,7 @@
 #import <Availability.h>
 #import <objc/runtime.h>
 
-#define kBITLineBreakWordWrapTextWidthScalingFactor (M_PI / M_E)
+#define kBITLineBreakWordWrapTextWidthScalingFactor (CGFloat)(M_PI / M_E)
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wunused-variable"
