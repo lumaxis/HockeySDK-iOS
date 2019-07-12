@@ -82,7 +82,7 @@ cp -R "${SRCROOT}/${DEVICE_DIR}/include/HockeySDK/HockeySDKNullability.h" "${INS
 # Copy the patched feature header
 cp -f "${SRCROOT}/HockeySDKFeatureConfigDefault.h" "${INSTALL_DIR}/Headers/HockeySDKFeatureConfig.h"
 
-# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.
+# Uses the Lipo Tool to merge both binary files (i386/x86_64 + armv7/armv7s/arm64) into one Universal final product.
 lipo -create "${DEVICE_DIR}/lib${FMK_NAME}.a" "${SIMULATOR_DIR}/lib${FMK_NAME}.a" -output "${INSTALL_DIR}/${FMK_NAME}"
 
 # Combine the CrashReporter static library into a new Hockey static library file if they are not already present and copy the public headers too
